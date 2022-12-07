@@ -13,15 +13,18 @@ $(document).ready(function(){
         $('.image img').css('display','block');
         $('.image').animate({width:"100%",height:"auto"},5000);
     });
-    $('.image').click(function(){
+    $('.image img').click(function(){
         $(this).slideUp();
     });
-    $('body').on('beforeunload'),(function(){
-        alert('Merci au revoir');
-    });
+    $('#btn_ajax').click(function(){
+        //On charge notre fichier ajax et on l'insère dans content_ajax
+        $('#content_ajax').load('assets/ajax/content.html');
+    })
+    $('.drag').draggable();
 });
-$(document).bind('mousemove',function(e){
-    $('#souris').text(e.pageX+","+e.pageY);
-    $('#img_souris').css('top',e.pageY);
-    $('#img_souris').css('left',e.pageX);
-});
+//L'image va suivre la souris
+// $(document).bind('mousemove',function(e){
+//     $('#souris').text(e.pageX+","+e.pageY);
+//     $('#img_souris').css('top',e.pageY);
+//     $('#img_souris').css('left',e.pageX);
+// });
