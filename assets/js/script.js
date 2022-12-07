@@ -13,6 +13,7 @@ $(document).ready(function(){
         $('.image img').css('display','block');
         $('.image').animate({width:"100%",height:"auto"},5000);
     });
+    $('div').css('border','3px solid black');
     $('.image img').click(function(){
         $(this).slideUp();
     });
