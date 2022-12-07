@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('.faq h3').click(function(){
+    $('.faq').click(function(){
         $('p', this).toggle();
     });
 });
