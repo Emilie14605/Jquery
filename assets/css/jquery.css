@@ -4,6 +4,11 @@
     border: 1px solid black;
     border-radius: 10px;
 }
-.faq p{
+.faq p, .image{
     display: none;
+}
+#img_souris{
+    position: absolute;
+    width: 45px;
+    height: auto;
 }
